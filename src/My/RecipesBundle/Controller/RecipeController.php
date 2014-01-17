@@ -1,7 +1,7 @@
 <?php
 
 namespace My\RecipesBundle\Controller;
-
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 
 
@@ -20,10 +20,7 @@ class RecipeController extends Controller
     }
 
 
-    public function jsonAction($name)
-    {
-        return array('name' => $name);
-    }
+   
 
     public function setsessionAction(Request $req)
     {

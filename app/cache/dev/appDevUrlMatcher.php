@@ -148,6 +148,24 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        // appgym_workout_default_response
+        if (rtrim($pathinfo, '/') === '/respuesta') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'appgym_workout_default_response');
+            }
+
+            return array (  '_controller' => 'AppGym\\WorkoutBundle\\Controller\\DefaultController::responseAction',  '_route' => 'appgym_workout_default_response',);
+        }
+
+        // appgym_workout_default_json
+        if (rtrim($pathinfo, '/') === '/json') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'appgym_workout_default_json');
+            }
+
+            return array (  '_controller' => 'AppGym\\WorkoutBundle\\Controller\\DefaultController::jsonAction',  '_route' => 'appgym_workout_default_json',);
+        }
+
         // recipes_home
         if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'recipes_home')), array (  '_controller' => 'My\\RecipesBundle\\Controller\\DefaultController::indexAction',));
