@@ -2945,6 +2945,8 @@ class appDevDebugProjectContainer extends Container
         $instance->addPath('/var/www/symcurs.dev/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views', 'Twig');
         $instance->addPath('/var/www/symcurs.dev/vendor/symfony/swiftmailer-bundle/Symfony/Bundle/SwiftmailerBundle/Resources/views', 'Swiftmailer');
         $instance->addPath('/var/www/symcurs.dev/vendor/doctrine/doctrine-bundle/Doctrine/Bundle/DoctrineBundle/Resources/views', 'Doctrine');
+        $instance->addPath('/var/www/symcurs.dev/src/My/RecipesBundle/Resources/views', 'MyRecipes');
+        $instance->addPath('/var/www/symcurs.dev/src/AppGym/WorkoutBundle/Resources/views', 'AppGymWorkout');
         $instance->addPath('/var/www/symcurs.dev/src/Acme/DemoBundle/Resources/views', 'AcmeDemo');
         $instance->addPath('/var/www/symcurs.dev/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views', 'WebProfiler');
         $instance->addPath('/var/www/symcurs.dev/vendor/sensio/distribution-bundle/Sensio/Bundle/DistributionBundle/Resources/views', 'SensioDistribution');
@@ -3429,6 +3431,8 @@ class appDevDebugProjectContainer extends Container
                 'AsseticBundle' => 'Symfony\\Bundle\\AsseticBundle\\AsseticBundle',
                 'DoctrineBundle' => 'Doctrine\\Bundle\\DoctrineBundle\\DoctrineBundle',
                 'SensioFrameworkExtraBundle' => 'Sensio\\Bundle\\FrameworkExtraBundle\\SensioFrameworkExtraBundle',
+                'MyRecipesBundle' => 'My\\RecipesBundle\\MyRecipesBundle',
+                'AppGymWorkoutBundle' => 'AppGym\\WorkoutBundle\\AppGymWorkoutBundle',
                 'AcmeDemoBundle' => 'Acme\\DemoBundle\\AcmeDemoBundle',
                 'WebProfilerBundle' => 'Symfony\\Bundle\\WebProfilerBundle\\WebProfilerBundle',
                 'SensioDistributionBundle' => 'Sensio\\Bundle\\DistributionBundle\\SensioDistributionBundle',

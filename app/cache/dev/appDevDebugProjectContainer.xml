@@ -16,6 +16,8 @@
       <parameter key="AsseticBundle">Symfony\Bundle\AsseticBundle\AsseticBundle</parameter>
       <parameter key="DoctrineBundle">Doctrine\Bundle\DoctrineBundle\DoctrineBundle</parameter>
       <parameter key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</parameter>
+      <parameter key="MyRecipesBundle">My\RecipesBundle\MyRecipesBundle</parameter>
+      <parameter key="AppGymWorkoutBundle">AppGym\WorkoutBundle\AppGymWorkoutBundle</parameter>
       <parameter key="AcmeDemoBundle">Acme\DemoBundle\AcmeDemoBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
@@ -2707,6 +2709,14 @@
       <call method="addPath">
         <argument>/var/www/symcurs.dev/vendor/doctrine/doctrine-bundle/Doctrine/Bundle/DoctrineBundle/Resources/views</argument>
         <argument>Doctrine</argument>
+      </call>
+      <call method="addPath">
+        <argument>/var/www/symcurs.dev/src/My/RecipesBundle/Resources/views</argument>
+        <argument>MyRecipes</argument>
+      </call>
+      <call method="addPath">
+        <argument>/var/www/symcurs.dev/src/AppGym/WorkoutBundle/Resources/views</argument>
+        <argument>AppGymWorkout</argument>
       </call>
       <call method="addPath">
         <argument>/var/www/symcurs.dev/src/Acme/DemoBundle/Resources/views</argument>

@@ -1,0 +1,23 @@
+recipes_home:
+    path:  /hello/{name}
+    defaults: { _controller: MyRecipesBundle:Default:index }
+
+recipes_list:
+    path:  /recipes/{page}
+    defaults: { _controller: MyRecipesBundle:Recipe:list }
+    requirements:
+        page: \d+
+
+recipes_show1:
+    path:  /recipe/{recipe}
+    defaults: { _controller: MyRecipesBundle:Recipe:show }
+    requirements:
+        recipe: \d+
+
+recipes_show_seo:
+    path:  /recetas/{recipe}
+    defaults: { _controller: MyRecipesBundle:Recipe:show }
+
+recipes_json:
+    path:  /json/
+    defaults: { _controller: MyRecipesBundle:Recipe:json }

@@ -1,0 +1,9 @@
+app_gym_workout:
+    resource: "@AppGymWorkoutBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+my_recipes:
+    resource: "@MyRecipesBundle/Resources/config/routing.yml"
+    prefix:   /
+
