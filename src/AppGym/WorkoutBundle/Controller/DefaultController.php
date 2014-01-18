@@ -25,7 +25,7 @@ class DefaultController extends Controller
      */
     public function responseAction()
     {
-        return new Response("OK!!!");
+        return new Response("Adrián!!!");
     }
 
     /**
@@ -33,9 +33,9 @@ class DefaultController extends Controller
      */
     public function jsonAction()
     {
-    	$res = new Response(json_encode(array("name"=>"Adrián")));
-        $res->headers->set("Content-Type" , "application/json; charset=UTF-8");
-        $res->headers->set("Charset" , "UTF8");
+    	$res = new Response(json_encode(array("name"=>"Adrián", "apellidos" =>"M.F", "profesion"=>"desempleado/programador web")));
+        $res->headers->set("Content-Type" , "application/json");
+        $res->setCharset("UTF8");
         return $res;
     }
 
